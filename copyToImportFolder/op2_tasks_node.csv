@@ -1,4 +1,4 @@
-id,task,priority,effort
+id,task_name,priority,effort
 "t001","Brainstorm cooking ideas",4,10
 "t002","Buffer growium in park",3,20
 "t003","Clean rest room",2,10
