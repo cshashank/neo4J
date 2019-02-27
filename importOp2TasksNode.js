@@ -1,6 +1,7 @@
-WITH "file:///op2_node.csv"
+WITH "file:///op2_tasks_node.csv"
 AS uri
 LOAD CSV WITH HEADERS FROM uri  AS row
-MERGE (employee:Employee {id:row.id})
-SET employee.firstName = row.first_name,
-	employee.lastName = row.last_name
+MERGE (task:Task {id:row.id})
+SET task.taskName = row.task_name,
+	task.priority = toInteger(row.priority),
+	task.effort = toInteger(row.effort)	
