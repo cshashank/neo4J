@@ -1,6 +1,6 @@
-emp,task,priority,effort
-"e001","Brainstorm cooking ideas",4,10
-"e002","Buffer growium in park",3,20
-"e003","Clean rest room",2,10
-"e001","Make yougurt",5,30
-"e002","Shop at restaurant depot",5,100
+empId,taskId
+"e001","t001"
+"e002","t002"
+"e003","t003"
+"e001","t004"
+"e002","t005"

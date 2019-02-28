@@ -1,6 +1,6 @@
-WITH "https://github.com/neo4j-graph-analytics/book/raw/master/data/transport-relationships.csv"
+WITH "file:///op2_relationship.csv"
 AS uri
 LOAD CSV WITH HEADERS FROM uri AS row
-MATCH (origin:Place {id: row.src})
-MATCH (destination:Place {id: row.dst})
-MERGE (origin)-[:EROAD {distance: toInteger(row.cost)}]->(destination)
+MATCH (employee:Employee {id: row.empId})
+MATCH (task:Task {id: row.taskId})
+MERGE (employee)-[:PERFORMS]->(task)
