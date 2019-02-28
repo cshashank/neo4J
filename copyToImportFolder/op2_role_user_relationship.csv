@@ -1,6 +1,5 @@
-roleId,empId
-"r001","e001"
-"r002","e002"
-"r001","e003"
-"r002","e001"
-"r001","e002"
+roleId,roleName,empId
+"r002","Hydroponics","e002"
+"r001","Facilities","e003"
+"r003","Kitchen","e001"
+"r001","Facilities","e002"
