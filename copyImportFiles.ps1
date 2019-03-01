@@ -1,1 +1,0 @@
-Copy-Item C:\workspace\Neo4jDesktop\scripts\neo4J\copyToImportFolder\* -Destination C:\software\neo4j-community-3.5.3-windows\neo4j-community-3.5.3\import\ -Recurse -force
