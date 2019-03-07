@@ -9,4 +9,5 @@ sourceTask,targetTask,edge
 "t006","t009",5
 "t005","t010",2
 "t010","t011",5
+"t010","t008",3
 

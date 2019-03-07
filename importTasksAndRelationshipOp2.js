@@ -12,4 +12,4 @@ AS uri
 LOAD CSV WITH HEADERS FROM uri AS row
 MATCH (source:Task {id: row.sourceTask})
 MATCH (dest:Task {id: row.targetTask})
-MERGE (source)-[:THEN {effort:row.edge} ]->(dest)
+MERGE (source)-[:EFFORT {effort:toInteger(row.edge)} ]->(dest)
