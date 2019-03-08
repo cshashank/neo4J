@@ -2,8 +2,8 @@ Dijkstra algo
 
 weighted
 
-MATCH (source:Task {id: "t001",emp:"e001"}),      
-	(destination:Task {id: "t008"})
+MATCH (source:Task {id: "t001",empId:"e001"}),      
+	(destination:Task {id: "t010",empId:"e002"})
 CALL algo.shortestPath.stream(source, destination,  "effort")
 YIELD nodeId, cost
 RETURN algo.getNodeById(nodeId).id AS task, algo.getNodeById(nodeId).empId AS empId,cost
