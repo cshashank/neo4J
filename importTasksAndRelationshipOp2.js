@@ -12,4 +12,6 @@ AS uri
 LOAD CSV WITH HEADERS FROM uri AS row
 MATCH (source:Task {id: row.sourceTask})
 MATCH (dest:Task {id: row.targetTask})
-MERGE (source)-[:EFFORT {effort:toInteger(row.edge)} ]->(dest)
+MERGE (source)-[r:DEPENDS ]->(dest)
+SET r.caption = 'row.strEdge',
+	r.effort = row.intEdge
