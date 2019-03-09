@@ -13,7 +13,7 @@ relationship {
   padding: 3px;
   text-color-external: #000000;
   text-color-internal: #FFFFFF;
-  caption: "<type>";
+  caption: "{effort}";
 }
 node.* {
   color: #C990C0;
